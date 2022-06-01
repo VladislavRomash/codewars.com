@@ -1,0 +1,10 @@
+function grader(score) {
+    if (score > 1 || score < 0.6) return 'F'
+    if (score < 0.7) return 'D'
+    if (score < 0.8) return 'C'
+    if (score < 0.9) return 'B'
+    return 'A'
+}
+
+grader(0.7)
+grader(0.9)
