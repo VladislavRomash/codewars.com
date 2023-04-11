@@ -7,6 +7,10 @@ function freqSeq(str, sep) {
     return arr.join(sep)
 }
 
+function freqSeq(str, sep) {
+    return str.split('').map((v, i, arr) => arr.filter(vi => vi === v).length).join(sep);
+}
+
 
 freqSeq('hello world', '-') // '1-1-3-3-2-1-1-2-1-3-1'
 freqSeq('19999999', ':') // '1:7:7:7:7:7:7:7'
